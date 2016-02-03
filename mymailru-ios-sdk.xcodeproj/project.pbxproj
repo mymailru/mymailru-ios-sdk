@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1438C82A1C576A0D00CB4526 /* MMApiConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1438C8291C576A0D00CB4526 /* MMApiConst.m */; };
+		1440FDFC1C4FCADD0057EBEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1440FDFB1C4FCADD0057EBEF /* main.m */; };
+		1440FDFF1C4FCADD0057EBEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1440FDFE1C4FCADD0057EBEF /* AppDelegate.m */; };
+		1440FE021C4FCADD0057EBEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1440FE011C4FCADD0057EBEF /* ViewController.m */; };
+		1440FE051C4FCADD0057EBEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1440FE031C4FCADD0057EBEF /* Main.storyboard */; };
+		1440FE071C4FCADD0057EBEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1440FE061C4FCADD0057EBEF /* Assets.xcassets */; };
+		1440FE0A1C4FCADD0057EBEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1440FE081C4FCADD0057EBEF /* LaunchScreen.storyboard */; };
+		1440FE141C4FCB150057EBEF /* MMSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 1440FE131C4FCB150057EBEF /* MMSdk.m */; };
+		1440FE171C4FD8AC0057EBEF /* MMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1440FE161C4FD8AC0057EBEF /* MMObject.m */; };
+		1440FE1A1C4FD8C00057EBEF /* MMAuthorizationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1440FE191C4FD8C00057EBEF /* MMAuthorizationResult.m */; };
+		1440FE1F1C4FDE150057EBEF /* MMAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 1440FE1E1C4FDE150057EBEF /* MMAccessToken.m */; };
+		145D4A061C5BA56A00AA0E41 /* MMError.m in Sources */ = {isa = PBXBuildFile; fileRef = 145D4A051C5BA56A00AA0E41 /* MMError.m */; };
+		147B718F1C511CD7001AFA36 /* MMAuthorizeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 147B718E1C511CD7001AFA36 /* MMAuthorizeController.m */; };
+		14CF6FEF1C56441200E85C50 /* MMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF6FEE1C56441200E85C50 /* MMUtil.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1438C8281C576A0D00CB4526 /* MMApiConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMApiConst.h; path = sdk/Utils/MMApiConst.h; sourceTree = "<group>"; };
+		1438C8291C576A0D00CB4526 /* MMApiConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMApiConst.m; path = sdk/Utils/MMApiConst.m; sourceTree = "<group>"; };
+		1440FDF71C4FCADD0057EBEF /* mymailru-ios-sdk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mymailru-ios-sdk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1440FDFB1C4FCADD0057EBEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1440FDFD1C4FCADD0057EBEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1440FDFE1C4FCADD0057EBEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1440FE001C4FCADD0057EBEF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1440FE011C4FCADD0057EBEF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1440FE041C4FCADD0057EBEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1440FE061C4FCADD0057EBEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1440FE091C4FCADD0057EBEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1440FE0B1C4FCADD0057EBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1440FE121C4FCB150057EBEF /* MMSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSdk.h; path = sdk/MMSdk.h; sourceTree = "<group>"; };
+		1440FE131C4FCB150057EBEF /* MMSdk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSdk.m; path = sdk/MMSdk.m; sourceTree = "<group>"; };
+		1440FE151C4FD8AC0057EBEF /* MMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMObject.h; path = sdk/Core/MMObject.h; sourceTree = "<group>"; };
+		1440FE161C4FD8AC0057EBEF /* MMObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMObject.m; path = sdk/Core/MMObject.m; sourceTree = "<group>"; };
+		1440FE181C4FD8C00057EBEF /* MMAuthorizationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMAuthorizationResult.h; path = sdk/SDK/MMAuthorizationResult.h; sourceTree = "<group>"; };
+		1440FE191C4FD8C00057EBEF /* MMAuthorizationResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMAuthorizationResult.m; path = sdk/SDK/MMAuthorizationResult.m; sourceTree = "<group>"; };
+		1440FE1D1C4FDE150057EBEF /* MMAccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMAccessToken.h; path = sdk/SDK/MMAccessToken.h; sourceTree = "<group>"; };
+		1440FE1E1C4FDE150057EBEF /* MMAccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMAccessToken.m; path = sdk/SDK/MMAccessToken.m; sourceTree = "<group>"; };
+		145D4A041C5BA56A00AA0E41 /* MMError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMError.h; path = sdk/Core/MMError.h; sourceTree = "<group>"; };
+		145D4A051C5BA56A00AA0E41 /* MMError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMError.m; path = sdk/Core/MMError.m; sourceTree = "<group>"; };
+		147B718D1C511CD7001AFA36 /* MMAuthorizeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMAuthorizeController.h; path = sdk/Views/MMAuthorizeController.h; sourceTree = "<group>"; };
+		147B718E1C511CD7001AFA36 /* MMAuthorizeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMAuthorizeController.m; path = sdk/Views/MMAuthorizeController.m; sourceTree = "<group>"; };
+		147B71901C511E84001AFA36 /* MMSdkVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MMSdkVersion.h; path = sdk/SDK/MMSdkVersion.h; sourceTree = "<group>"; };
+		14CF6FED1C56441200E85C50 /* MMUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMUtil.h; path = sdk/Utils/MMUtil.h; sourceTree = "<group>"; };
+		14CF6FEE1C56441200E85C50 /* MMUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMUtil.m; path = sdk/Utils/MMUtil.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1440FDF41C4FCADD0057EBEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1440FDEE1C4FCADD0057EBEF = {
+			isa = PBXGroup;
+			children = (
+				1440FDF91C4FCADD0057EBEF /* mymailru-ios-sdk */,
+				1440FDF81C4FCADD0057EBEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1440FDF81C4FCADD0057EBEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1440FDF71C4FCADD0057EBEF /* mymailru-ios-sdk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1440FDF91C4FCADD0057EBEF /* mymailru-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				1440FDFD1C4FCADD0057EBEF /* AppDelegate.h */,
+				1440FDFE1C4FCADD0057EBEF /* AppDelegate.m */,
+				1440FE001C4FCADD0057EBEF /* ViewController.h */,
+				1440FE011C4FCADD0057EBEF /* ViewController.m */,
+				1440FE031C4FCADD0057EBEF /* Main.storyboard */,
+				1440FE061C4FCADD0057EBEF /* Assets.xcassets */,
+				1440FE081C4FCADD0057EBEF /* LaunchScreen.storyboard */,
+				1440FE0B1C4FCADD0057EBEF /* Info.plist */,
+				1440FE111C4FCAE60057EBEF /* sdk */,
+				1440FDFA1C4FCADD0057EBEF /* Supporting Files */,
+			);
+			path = "mymailru-ios-sdk";
+			sourceTree = "<group>";
+		};
+		1440FDFA1C4FCADD0057EBEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1440FDFB1C4FCADD0057EBEF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1440FE111C4FCAE60057EBEF /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				147B718C1C511C9B001AFA36 /* Views */,
+				1440FE121C4FCB150057EBEF /* MMSdk.h */,
+				1440FE131C4FCB150057EBEF /* MMSdk.m */,
+				1440FE1B1C4FD8CF0057EBEF /* SDK */,
+				1440FE1C1C4FD8D80057EBEF /* Core */,
+				14CF6FEC1C5643FA00E85C50 /* Utils */,
+			);
+			name = sdk;
+			sourceTree = "<group>";
+		};
+		1440FE1B1C4FD8CF0057EBEF /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				1440FE1D1C4FDE150057EBEF /* MMAccessToken.h */,
+				1440FE1E1C4FDE150057EBEF /* MMAccessToken.m */,
+				1440FE181C4FD8C00057EBEF /* MMAuthorizationResult.h */,
+				1440FE191C4FD8C00057EBEF /* MMAuthorizationResult.m */,
+				147B71901C511E84001AFA36 /* MMSdkVersion.h */,
+			);
+			name = SDK;
+			sourceTree = "<group>";
+		};
+		1440FE1C1C4FD8D80057EBEF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1440FE151C4FD8AC0057EBEF /* MMObject.h */,
+				1440FE161C4FD8AC0057EBEF /* MMObject.m */,
+				145D4A041C5BA56A00AA0E41 /* MMError.h */,
+				145D4A051C5BA56A00AA0E41 /* MMError.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		147B718C1C511C9B001AFA36 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				147B718D1C511CD7001AFA36 /* MMAuthorizeController.h */,
+				147B718E1C511CD7001AFA36 /* MMAuthorizeController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		14CF6FEC1C5643FA00E85C50 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1438C8281C576A0D00CB4526 /* MMApiConst.h */,
+				1438C8291C576A0D00CB4526 /* MMApiConst.m */,
+				14CF6FED1C56441200E85C50 /* MMUtil.h */,
+				14CF6FEE1C56441200E85C50 /* MMUtil.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1440FDF61C4FCADD0057EBEF /* mymailru-ios-sdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1440FE0E1C4FCADD0057EBEF /* Build configuration list for PBXNativeTarget "mymailru-ios-sdk" */;
+			buildPhases = (
+				1440FDF31C4FCADD0057EBEF /* Sources */,
+				1440FDF41C4FCADD0057EBEF /* Frameworks */,
+				1440FDF51C4FCADD0057EBEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mymailru-ios-sdk";
+			productName = "mymailru-ios-sdk";
+			productReference = 1440FDF71C4FCADD0057EBEF /* mymailru-ios-sdk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1440FDEF1C4FCADD0057EBEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = mail.ru;
+				TargetAttributes = {
+					1440FDF61C4FCADD0057EBEF = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 96Z6VE5YH6;
+					};
+				};
+			};
+			buildConfigurationList = 1440FDF21C4FCADD0057EBEF /* Build configuration list for PBXProject "mymailru-ios-sdk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1440FDEE1C4FCADD0057EBEF;
+			productRefGroup = 1440FDF81C4FCADD0057EBEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1440FDF61C4FCADD0057EBEF /* mymailru-ios-sdk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1440FDF51C4FCADD0057EBEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1440FE0A1C4FCADD0057EBEF /* LaunchScreen.storyboard in Resources */,
+				1440FE071C4FCADD0057EBEF /* Assets.xcassets in Resources */,
+				1440FE051C4FCADD0057EBEF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1440FDF31C4FCADD0057EBEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1440FE1F1C4FDE150057EBEF /* MMAccessToken.m in Sources */,
+				1438C82A1C576A0D00CB4526 /* MMApiConst.m in Sources */,
+				1440FE141C4FCB150057EBEF /* MMSdk.m in Sources */,
+				1440FE021C4FCADD0057EBEF /* ViewController.m in Sources */,
+				145D4A061C5BA56A00AA0E41 /* MMError.m in Sources */,
+				147B718F1C511CD7001AFA36 /* MMAuthorizeController.m in Sources */,
+				1440FDFF1C4FCADD0057EBEF /* AppDelegate.m in Sources */,
+				14CF6FEF1C56441200E85C50 /* MMUtil.m in Sources */,
+				1440FDFC1C4FCADD0057EBEF /* main.m in Sources */,
+				1440FE1A1C4FD8C00057EBEF /* MMAuthorizationResult.m in Sources */,
+				1440FE171C4FD8AC0057EBEF /* MMObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1440FE031C4FCADD0057EBEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1440FE041C4FCADD0057EBEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1440FE081C4FCADD0057EBEF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1440FE091C4FCADD0057EBEF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1440FE0C1C4FCADD0057EBEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1440FE0D1C4FCADD0057EBEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1440FE0F1C4FCADD0057EBEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "mymailru-ios-sdk/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.mail.mymailru-ios-sdk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1440FE101C4FCADD0057EBEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "mymailru-ios-sdk/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.mail.mymailru-ios-sdk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1440FDF21C4FCADD0057EBEF /* Build configuration list for PBXProject "mymailru-ios-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1440FE0C1C4FCADD0057EBEF /* Debug */,
+				1440FE0D1C4FCADD0057EBEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1440FE0E1C4FCADD0057EBEF /* Build configuration list for PBXNativeTarget "mymailru-ios-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1440FE0F1C4FCADD0057EBEF /* Debug */,
+				1440FE101C4FCADD0057EBEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1440FDEF1C4FCADD0057EBEF /* Project object */;
+}
