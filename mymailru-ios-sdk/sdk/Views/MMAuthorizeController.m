@@ -122,6 +122,7 @@ NSString *MM_AUTHORIZE_URL_STRING = @"https://connect.mail.ru/oauth/authorize";
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     NSString *fragment = request.URL.fragment;
+    NSString *query = request.URL.query;
     
     if (fragment && [fragment rangeOfString:@"access_token"].location != NSNotFound) {
         MMAccessToken *token = [MMAccessToken tokenFromUrlString:fragment];
@@ -133,6 +134,9 @@ NSString *MM_AUTHORIZE_URL_STRING = @"https://connect.mail.ru/oauth/authorize";
             [_delegate didFailToGetToken:error];
             [self closeButtonPressed];
         }
+    } else if (query && [query rangeOfString:@"error"].location != NSNotFound) {
+        MMError *error = [MMError errorWithCode:MM_API_CANCELED];
+        [_delegate didFailToGetToken:error];
     } else if (fragment && [fragment rangeOfString:@"error"].location != NSNotFound) {
         MMError *error = [MMError errorWithCode:MM_API_ERROR];
         [_delegate didFailToGetToken:error];
