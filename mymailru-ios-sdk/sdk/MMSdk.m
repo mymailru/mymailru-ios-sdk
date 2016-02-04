@@ -163,7 +163,7 @@ static MMSdk *mmSdkInstance = nil;
         if (token) {
             [instance notifyDelegate:@selector(mmSdkAccessAuthorizationFinishedWithResult:) obj:res];
         } else {
-            [instance notifyDelegate:@selector(mmSdkAccessAuthorizationFinishedWithResult:) obj:res];
+            [instance notifyDelegate:@selector(mmSdkUserAuthorizationFailed:) obj:error];
         }
     };
     
